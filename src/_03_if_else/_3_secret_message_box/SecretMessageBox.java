@@ -15,7 +15,21 @@ import javax.swing.JOptionPane;
  */
 
 public class SecretMessageBox {
-public static void main
+public static void main(String[] args) {
+	String password= "shep R knot mammals?";
+	String secretMessage = JOptionPane.showInputDialog("Put in a secret message");
+	String guess= JOptionPane.showInputDialog("If you can guess the password, you can access the secret message.");
+	
+	if (guess.equals(password)) {
+		JOptionPane.showMessageDialog(null, secretMessage);
+	}
+	else{
+		JOptionPane.showMessageDialog(null, "INTRUDER ALERT! INTRUDER ALERT! INTRUDER ALERT!");
+	}
+	// else if(!guess.equals("password")
+	// ! means not. flips the truthy value
+}
+
 	
 	// 0. Make a main method and put steps 1-5 inside it
 	
