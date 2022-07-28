@@ -32,8 +32,26 @@ public class RobotInSpace extends KeyboardAdapter {
 	private void moveRobot(int keyPressed) {
 		// 2. Print out the keyPressed variable and write down the numbers for
 		// each arrow key
+		System.out.println("Key code is: "+keyPressed);
+		
+		
 		
 		// 3. If the up arrow is pressed, move the Robot up the screen.
+		if(keyPressed == 38) {
+			rob.move(5);
+		}else if(keyPressed == 40) {
+			rob.turn(180);
+			rob.move(5);
+		}
+		else if(keyPressed ==37) {
+			rob.turn(270);
+			rob.move(5);
+		}
+		else if (keyPressed == 39) {
+			rob.turn(90);
+			rob.move(5);
+		}
+		
 		
 		// 4. If the down arrow is pressed, move the Robot down.
 		
