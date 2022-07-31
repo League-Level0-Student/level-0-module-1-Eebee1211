@@ -11,10 +11,11 @@ void draw() {
 fill(#11F5C5);
   ellipse(140,165,89,75); 
   ellipse(348,148,89,75); 
-  fill(#000000); 
+  fill(mouseX+40/2,mouseX/2,mouseY/2);
+  //
   ellipse(140,165,32,32); 
   ellipse(348,148,32,32); 
-  
+  println("Mouse X: " + mouseX + "Mouse Y: " + mouseY);
   
   
 }

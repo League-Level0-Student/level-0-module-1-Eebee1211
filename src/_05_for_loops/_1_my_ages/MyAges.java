@@ -10,14 +10,16 @@ public class MyAges {
 		//        Start its value at zero.
 		
 		// Change the value of yourCurrentAge to match your age
-		int yourCurrentAge = 0;
-				
+		int yourCurrentAge = 12;
+		 int age = 0; 		
 		
 		//  WHILE LOOP. Start a while loop to repeat while age <= yourCurrentAge
-				
+			 
 			//  Print the age variable
-		
-			//  Add one to the age variable
+		 for ( age=0; age <= yourCurrentAge; age +=1 ) {  
+		 System.out.println(age); 
+		 }
+		 //  Add one to the age variable
 		
 		//  End the while loop here
 
@@ -37,5 +39,10 @@ public class MyAges {
 		
 		//  Run the program again. 		
 		//  Check that both loops printed the same numbers to the console
+	}
+
+	private static Object age(int yourCurrentAge) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
